@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weekly Report</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- jsPDF and html2canvas libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Editing Section -->
+    <section id="editing">
+      <h1>Weekly Report</h1>
+      <form id="reportForm">
+        <div class="employee-section">
+          <h2>Employee Reports</h2>
+          <!-- Anderson Galindo -->
+          <div class="employee">
+            <div class="employee-header">
+              <label for="anderson">Anderson Galindo</label>
+              <div class="employee-buttons">
+                <button type="button" class="boldBtn" data-target="anderson"><b>B</b></button>
+                <button type="button" class="highlightBtn" data-target="anderson">H</button>
+              </div>
+            </div>
+            <div class="editable" id="anderson" contenteditable="true" data-placeholder="Enter notes..."></div>
+          </div>
+          <!-- Candela Calvo -->
+          <div class="employee">
+            <div class="employee-header">
+              <label for="candela">Candela Calvo</label>
+              <div class="employee-buttons">
+                <button type="button" class="boldBtn" data-target="candela"><b>B</b></button>
+                <button type="button" class="highlightBtn" data-target="candela">H</button>
+              </div>
+            </div>
+            <div class="editable" id="candela" contenteditable="true" data-placeholder="Enter notes..."></div>
+          </div>
+          <!-- Daniel Leandro -->
+          <div class="employee">
+            <div class="employee-header">
+              <label for="daniel">Daniel Leandro</label>
+              <div class="employee-buttons">
+                <button type="button" class="boldBtn" data-target="daniel"><b>B</b></button>
+                <button type="button" class="highlightBtn" data-target="daniel">H</button>
+              </div>
+            </div>
+            <div class="editable" id="daniel" contenteditable="true" data-placeholder="Enter notes..."></div>
+          </div>
+          <!-- Franco Sant -->
+          <div class="employee">
+            <div class="employee-header">
+              <label for="franco">Franco Sant</label>
+              <div class="employee-buttons">
+                <button type="button" class="boldBtn" data-target="franco"><b>B</b></button>
+                <button type="button" class="highlightBtn" data-target="franco">H</button>
+              </div>
+            </div>
+            <div class="editable" id="franco" contenteditable="true" data-placeholder="Enter notes..."></div>
+          </div>
+          <!-- Josefina Cisneros -->
+          <div class="employee">
+            <div class="employee-header">
+              <label for="josefina">Josefina Cisneros</label>
+              <div class="employee-buttons">
+                <button type="button" class="boldBtn" data-target="josefina"><b>B</b></button>
+                <button type="button" class="highlightBtn" data-target="josefina">H</button>
+              </div>
+            </div>
+            <div class="editable" id="josefina" contenteditable="true" data-placeholder="Enter notes..."></div>
+          </div>
+          <!-- Lucia Berterreix -->
+          <div class="employee">
+            <div class="employee-header">
+              <label for="lucia">Lucia Berterreix</label>
+              <div class="employee-buttons">
+                <button type="button" class="boldBtn" data-target="lucia"><b>B</b></button>
+                <button type="button" class="highlightBtn" data-target="lucia">H</button>
+              </div>
+            </div>
+            <div class="editable" id="lucia" contenteditable="true" data-placeholder="Enter notes..."></div>
+          </div>
+          <!-- Marcos & Sofia -->
+          <div class="employee">
+            <div class="employee-header">
+              <label for="marcosSofia">Marcos &amp; Sofia</label>
+              <div class="employee-buttons">
+                <button type="button" class="boldBtn" data-target="marcosSofia"><b>B</b></button>
+                <button type="button" class="highlightBtn" data-target="marcosSofia">H</button>
+              </div>
+            </div>
+            <div class="editable" id="marcosSofia" contenteditable="true" data-placeholder="Enter notes..."></div>
+          </div>
+          <!-- Pilar Figueras -->
+          <div class="employee">
+            <div class="employee-header">
+              <label for="pilar">Pilar Figueras</label>
+              <div class="employee-buttons">
+                <button type="button" class="boldBtn" data-target="pilar"><b>B</b></button>
+                <button type="button" class="highlightBtn" data-target="pilar">H</button>
+              </div>
+            </div>
+            <div class="editable" id="pilar" contenteditable="true" data-placeholder="Enter notes..."></div>
+          </div>
+          <!-- Sarah Hersh -->
+          <div class="employee">
+            <div class="employee-header">
+              <label for="sarah">Sarah Hersh</label>
+              <div class="employee-buttons">
+                <button type="button" class="boldBtn" data-target="sarah"><b>B</b></button>
+                <button type="button" class="highlightBtn" data-target="sarah">H</button>
+              </div>
+            </div>
+            <div class="editable" id="sarah" contenteditable="true" data-placeholder="Enter notes..."></div>
+          </div>
+          <!-- Sofia Santantonin -->
+          <div class="employee">
+            <div class="employee-header">
+              <label for="sofiaSant">Sofia Santantonin</label>
+              <div class="employee-buttons">
+                <button type="button" class="boldBtn" data-target="sofiaSant"><b>B</b></button>
+                <button type="button" class="highlightBtn" data-target="sofiaSant">H</button>
+              </div>
+            </div>
+            <div class="editable" id="sofiaSant" contenteditable="true" data-placeholder="Enter notes..."></div>
+          </div>
+          <!-- Valentina Arinez -->
+          <div class="employee">
+            <div class="employee-header">
+              <label for="valentina">Valentina Arinez</label>
+              <div class="employee-buttons">
+                <button type="button" class="boldBtn" data-target="valentina"><b>B</b></button>
+                <button type="button" class="highlightBtn" data-target="valentina">H</button>
+              </div>
+            </div>
+            <div class="editable" id="valentina" contenteditable="true" data-placeholder="Enter notes..."></div>
+          </div>
+          <!-- Vanina Manobla -->
+          <div class="employee">
+            <div class="employee-header">
+              <label for="vanina">Vanina Manobla</label>
+              <div class="employee-buttons">
+                <button type="button" class="boldBtn" data-target="vanina"><b>B</b></button>
+                <button type="button" class="highlightBtn" data-target="vanina">H</button>
+              </div>
+            </div>
+            <div class="editable" id="vanina" contenteditable="true" data-placeholder="Enter notes..."></div>
+          </div>
+          <!-- Victoria Battista -->
+          <div class="employee">
+            <div class="employee-header">
+              <label for="victoria">Victoria Battista</label>
+              <div class="employee-buttons">
+                <button type="button" class="boldBtn" data-target="victoria"><b>B</b></button>
+                <button type="button" class="highlightBtn" data-target="victoria">H</button>
+              </div>
+            </div>
+            <div class="editable" id="victoria" contenteditable="true" data-placeholder="Enter notes..."></div>
+          </div>
+        </div>
+
+        <div class="projects-section">
+          <h2>Projects</h2>
+          <div class="editable" id="projects" contenteditable="true" data-placeholder="Enter project notes..."></div>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" id="submitBtn">Submit Report</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Preview Section -->
+    <section id="preview" style="display: none;">
+      <div class="preview-container" id="previewContainer"></div>
+      <div class="preview-actions">
+        <button type="button" id="approveBtn">Approve</button>
+        <button type="button" id="editBtn">Edit</button>
+        <button type="button" id="startOverBtn">Start Over</button>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
