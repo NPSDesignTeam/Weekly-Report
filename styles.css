@@ -193,3 +193,8 @@ button:hover {
   line-height: 1.4;
   white-space: pre-wrap;
 }
+.preview-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
