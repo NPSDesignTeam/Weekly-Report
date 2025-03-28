@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const header = document.createElement('div');
     header.className = 'page-header';
+    header.style.marginBottom = '40px'; // Extra space under header
     header.innerHTML = `<h2>${title}</h2><span>${date}</span>`;
 
     const content = document.createElement('div');
@@ -79,9 +80,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const PAGE_HEIGHT = 1056; // 11in x 96dpi
     const MARGIN_TOP = 96;   // 1 inch
     const MARGIN_BOTTOM = 96;
-    const HEADER_HEIGHT = 60;
+    const HEADER_HEIGHT = 80;
     const FOOTER_HEIGHT = 60;
-    const SAFETY_BUFFER = 24; // buffer for rounding or minor spacing issues
+    const SAFETY_BUFFER = 60; // buffer for spacing issues
 
     const availableHeight = PAGE_HEIGHT - MARGIN_TOP - MARGIN_BOTTOM - HEADER_HEIGHT - FOOTER_HEIGHT - SAFETY_BUFFER;
 
